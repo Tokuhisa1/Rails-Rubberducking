@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2018_08_15_150831) do
     t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    # Create a migration to add student_id column for join
     t.integer "student_id"
   end
 
