@@ -20,7 +20,7 @@ class DucksController < ApplicationController
       redirect_to duck_path(@duck)
     else
       flash[:errors] = @duck.errors.full_messages
-      render :new
+      redirect_to new_student_path
     end
   end
 
